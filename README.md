@@ -23,17 +23,17 @@ Pushing to master
 	
 	git commit -a -m "<message>"
 	
-	git push origin master
+	git push upstream master
 	
 	
 Pulling from master
 
-	git fetch origin
+	git fetch upstream
 	
-	git merge origin/master
+	git merge upstream/master
 	
 
-Possibly Unused
+Possibly Unused (Branches)
 ------------
 
 Creating a branch
@@ -56,14 +56,14 @@ Pushing to current branch
 	
 	git commit -a -m "<message>"
 	
-	git push origin <name_of_your_branch>
+	git push upstream <name_of_your_branch>
 	
 	
 Pulling from branch
 
 	git fetch <branchName>
 	
-	git merge origin/<name_of_your_branch>
+	git merge upstream/<name_of_your_branch>
 	
 
 Deleting a branch locally
@@ -73,5 +73,5 @@ Deleting a branch locally
 	
 Refreshing remote branches
 
-	git remote prune origin
+	git remote prune upstream
 	
