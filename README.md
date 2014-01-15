@@ -1,7 +1,7 @@
 Setup
 -----------
 
-	cd <empty folder of your choice>
+	cd <empty_folder_of_your_choice>
 	
 	git init
 	
@@ -19,9 +19,9 @@ Pushing to master
 
 	git status
 	
-	git add .
+	git add --all
 	
-	git commit -a -m "<message>"
+	git commit -m "<message_describing_changes>"
 	
 	git push upstream master
 	
