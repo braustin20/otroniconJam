@@ -3,13 +3,9 @@ Setup
 
 	cd <empty_folder_of_your_choice>
 	
-	git init
-	
 	git clone https://github.com/Tarwine/otroniconJam.git
 	
 	git remote add upstream https://github.com/Tarwine/otroniconJam.git
-	
-	git fetch upstream
 	
 	
 Main use cases
