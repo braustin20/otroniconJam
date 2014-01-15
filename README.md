@@ -9,6 +9,8 @@ Setup
 	
 	git remote add upstream https://github.com/Tarwine/otroniconJam.git
 	
+	git fetch upstream master (to move the head to master branch)
+	
 	
 Main use cases
 ------------
