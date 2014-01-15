@@ -1,9 +1,11 @@
 Setup
 -----------
 
-	cd <empty_folder_of_your_choice>
+	cd <folder_of_your_choice>
 	
 	git clone https://github.com/Tarwine/otroniconJam.git
+	
+	cd otroniconJam
 	
 	git remote add upstream https://github.com/Tarwine/otroniconJam.git
 	
