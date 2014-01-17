@@ -28,7 +28,7 @@ Pushing to master
 	
 Pulling from master
 
-	git fetch
+	git fetch upstream
 	
 	git merge upstream/master
 	
@@ -61,7 +61,7 @@ Pushing to current branch
 	
 Pulling from branch
 
-	git fetch
+	git fetch upstream
 	
 	git merge upstream/<name_of_your_branch>
 	
