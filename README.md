@@ -28,7 +28,7 @@ Pushing to master
 	
 Pulling from master
 
-	git fetch upstream
+	git fetch
 	
 	git merge upstream/master
 	
@@ -52,16 +52,16 @@ Pushing to current branch
 
 	git status
 	
-	git add .
+	git add --all
 	
-	git commit -a -m "<message>"
+	git commit -m "<message>"
 	
 	git push upstream <name_of_your_branch>
 	
 	
 Pulling from branch
 
-	git fetch <branchName>
+	git fetch
 	
 	git merge upstream/<name_of_your_branch>
 	
