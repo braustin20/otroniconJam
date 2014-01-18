@@ -4,7 +4,8 @@ using System.Collections;
 
 public class tileFallingBehavior : MonoBehaviour {
 
-	public float waitTime = 0.23f;
+	public float waitTime = 0.30f;
+	public bool isRigid = false;
 		// Use this for initialization
 	void Start () {
 	}
@@ -17,18 +18,20 @@ public class tileFallingBehavior : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		//gameObject.AddComponent("Rigidbody");
 
+		if(other.tag != "fallingPlatform"){
 		StartCoroutine(Fall());
+		}
 	}
 
 
 	IEnumerator Fall() {
 
-			Debug.Log ("ENTERED");
-
-
+			//Debug.Log ("ENTERED");
 			yield return new WaitForSeconds(waitTime);
-		gameObject.AddComponent("Rigidbody");
-
+		if(isRigid == false){
+			gameObject.AddComponent("Rigidbody");
+			isRigid = true;
+		}
 	}
 
 
