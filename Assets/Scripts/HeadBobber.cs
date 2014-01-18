@@ -3,8 +3,8 @@ using System.Collections;
 
 public class HeadBobber : MonoBehaviour {
 	private float timer = 0.0f;
-	public float bobbingSpeed = 0.18f;
-	public float bobbingAmount = 0.2f;
+	public float bobbingSpeed = 0.2f;
+	public float bobbingAmount = 0.08f;
 	public float midpoint = 0.0f;
 
 	// Use this for initialization
