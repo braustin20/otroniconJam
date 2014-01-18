@@ -753,6 +753,7 @@ GameObject:
   - 4: {fileID: 1617434787}
   - 114: {fileID: 1617434786}
   - 114: {fileID: 1617434785}
+  - 114: {fileID: 1617434788}
   m_Layer: 8
   m_Name: OVRCameraController
   m_TagString: Untagged
@@ -817,6 +818,20 @@ Transform:
   - {fileID: 1522190121}
   - {fileID: 1296058371}
   m_Father: {fileID: 2058841543}
+--- !u!114 &1617434788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1617434784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d36e980d7f0f17469712cf107744da7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bobbingSpeed: .200000003
+  bobbingAmount: .0799999982
+  midpoint: 0
 --- !u!1 &1788357823
 GameObject:
   m_ObjectHideFlags: 0

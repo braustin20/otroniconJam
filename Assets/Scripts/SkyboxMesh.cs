@@ -1,6 +1,3 @@
-// coded by Nora
-// edited by Brandon Austin
-// http://stereoarts.jp
 using UnityEngine;
 using System.Collections;
 

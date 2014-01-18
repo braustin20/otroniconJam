@@ -225,6 +225,9 @@ public class OVRPlayerController : OVRComponent
 		if (Input.GetKey(KeyCode.LeftArrow))  moveLeft 	  = true;
 		if (Input.GetKey(KeyCode.DownArrow))  moveBack 	  = true; 
 		if (Input.GetKey(KeyCode.RightArrow)) moveRight   = true; 
+
+		//Jump
+		if(Input.GetKeyDown (KeyCode.F)){ Jump();}
 			
 		if ( (moveForward && moveLeft) || (moveForward && moveRight) ||
 			 (moveBack && moveLeft)    || (moveBack && moveRight) )
@@ -353,7 +356,7 @@ public class OVRPlayerController : OVRComponent
 		if (!Controller.isGrounded)
 			return false;
 
-		MoveThrottle += new Vector3(0, JumpForce, 0);
+		MoveThrottle += new Vector3(MoveThrottle.x, JumpForce, MoveThrottle.z);
 
 		return true;
 	}
