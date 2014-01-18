@@ -7,6 +7,9 @@ TagManager:
   - GrabbableObject
   - fallingPlatform
   - closingWall
+  - stairObjectEven
+  - stairObjectOdd
+  - stairObject
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
