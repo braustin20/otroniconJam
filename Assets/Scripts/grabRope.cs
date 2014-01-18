@@ -14,9 +14,15 @@ public class grabRope : MonoBehaviour {
 	}
 	void OnTriggerEnter(Collider other){
 		if(other.gameObject.tag == "Player"){
-			other.gameObject.GetComponent<playerInteract>().grabbedRope = this.gameObject;
-			this.gameObject.rigidbody.AddForce(other.gameObject.transform.forward * 500);
-			other.gameObject.GetComponent<FPSInputController>().enabled = false;
+			other.gameObject.GetComponent<playerInteract>().inRange(this.gameObject);
+		//	other.gameObject.GetComponent<playerInteract>().grabbedRope = this.gameObject;
+		//	this.gameObject.rigidbody.AddForce(other.gameObject.transform.forward * 500);
+		//	other.gameObject.GetComponent<FPSInputController>().enabled = false;
+		}
+	}
+	void OnTriggerExit(Collider other){
+		if(other.gameObject.tag == "Player"){
+			other.gameObject.GetComponent<playerInteract>().outRange(this.gameObject);
 		}
 	}
 }
