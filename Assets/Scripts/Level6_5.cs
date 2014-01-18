@@ -1,12 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Level6 : MonoBehaviour {
+public class Level6_5 : MonoBehaviour {
 
 	public GameObject PlatformPrefab;
 
 	public int gridSize;
-
 
 	GameObject[ , ] grid;
 
@@ -35,7 +34,9 @@ public class Level6 : MonoBehaviour {
 
 	public void PlatformTrigger(Vector3 pos) {
 		Debug.Log (pos);
+
 		grid[(int)(pos.x / size), (int)(gridSize - 1 - (pos.z / size))].GetComponent<Level6Platforms>().Fall();
+		grid[(int)(pos.x),(int)(pos.z)].GetComponent<Level6Platforms>().Fall ();
 
 	}
 }
