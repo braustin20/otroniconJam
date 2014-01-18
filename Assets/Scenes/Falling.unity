@@ -149,9 +149,10 @@ GameObject:
   - 65: {fileID: 296083371}
   - 23: {fileID: 296083370}
   - 114: {fileID: 296083369}
+  - 65: {fileID: 296083374}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220,6 +221,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &296083374
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 296083368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &318101519
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,9 +245,10 @@ GameObject:
   - 65: {fileID: 318101522}
   - 23: {fileID: 318101521}
   - 114: {fileID: 318101520}
+  - 65: {fileID: 318101525}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -303,6 +317,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &318101525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318101519}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &381611678
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,27 +341,26 @@ GameObject:
   - 65: {fileID: 381611682}
   - 23: {fileID: 381611681}
   - 114: {fileID: 381611680}
-  - 114: {fileID: 381611679}
+  - 65: {fileID: 381611679}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &381611679
-MonoBehaviour:
+--- !u!65 &381611679
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 381611678}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e44024b9bddf9694799d73dde9281dea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitTime: .300000012
-  isRigid: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &381611680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,9 +437,10 @@ GameObject:
   - 65: {fileID: 391018108}
   - 23: {fileID: 391018107}
   - 114: {fileID: 391018106}
+  - 65: {fileID: 391018111}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,6 +509,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &391018111
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 391018105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &620180176
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,9 +633,10 @@ GameObject:
   - 33: {fileID: 744135597}
   - 65: {fileID: 744135596}
   - 23: {fileID: 744135595}
+  - 65: {fileID: 744135599}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -653,6 +692,18 @@ Transform:
   m_LocalScale: {x: 30, y: 1, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &744135599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744135594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &756161894
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,9 +716,10 @@ GameObject:
   - 65: {fileID: 756161897}
   - 23: {fileID: 756161896}
   - 114: {fileID: 756161895}
+  - 65: {fileID: 756161900}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -736,6 +788,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &756161900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756161894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &852111430
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +874,6 @@ GameObject:
   - 114: {fileID: 856399340}
   - 114: {fileID: 856399339}
   - 114: {fileID: 856399338}
-  - 54: {fileID: 856399337}
   m_Layer: 0
   m_Name: JumpingOVR
   m_TagString: Untagged
@@ -831,22 +894,6 @@ Transform:
   - {fileID: 1975344741}
   - {fileID: 1564572333}
   m_Father: {fileID: 0}
---- !u!54 &856399337
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5400000, guid: c2fc0baad5ceb8e4496e8c4dd629cee5,
-    type: 2}
-  m_PrefabInternal: {fileID: 2007763177}
-  m_GameObject: {fileID: 856399335}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &856399338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -961,9 +1008,10 @@ GameObject:
   - 65: {fileID: 873948319}
   - 23: {fileID: 873948318}
   - 114: {fileID: 873948317}
+  - 65: {fileID: 873948322}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1032,6 +1080,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &873948322
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 873948316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &898488202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,9 +1104,10 @@ GameObject:
   - 65: {fileID: 898488205}
   - 23: {fileID: 898488204}
   - 114: {fileID: 898488203}
+  - 65: {fileID: 898488208}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1115,6 +1176,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &898488208
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 898488202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &976315939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,9 +1200,10 @@ GameObject:
   - 65: {fileID: 976315942}
   - 23: {fileID: 976315941}
   - 114: {fileID: 976315940}
+  - 65: {fileID: 976315945}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1198,6 +1272,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &976315945
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 976315939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1065610727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,9 +1296,10 @@ GameObject:
   - 65: {fileID: 1065610730}
   - 23: {fileID: 1065610729}
   - 114: {fileID: 1065610728}
+  - 65: {fileID: 1065610733}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1281,6 +1368,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1065610733
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065610727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1086173657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,9 +1503,10 @@ GameObject:
   - 65: {fileID: 1150354271}
   - 23: {fileID: 1150354270}
   - 114: {fileID: 1150354269}
+  - 65: {fileID: 1150354274}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1475,6 +1575,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1150354274
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1150354268}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1249557473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,9 +1599,10 @@ GameObject:
   - 65: {fileID: 1249557476}
   - 23: {fileID: 1249557475}
   - 114: {fileID: 1249557474}
+  - 65: {fileID: 1249557479}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1558,6 +1671,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1249557479
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1249557473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1253407358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,9 +1694,10 @@ GameObject:
   - 33: {fileID: 1253407361}
   - 65: {fileID: 1253407360}
   - 23: {fileID: 1253407359}
+  - 65: {fileID: 1253407363}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1627,6 +1753,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1253407363
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1253407358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1334925229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,9 +1777,10 @@ GameObject:
   - 65: {fileID: 1334925232}
   - 23: {fileID: 1334925231}
   - 114: {fileID: 1334925230}
+  - 65: {fileID: 1334925235}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1710,6 +1849,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1334925235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1334925229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1353407466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,9 +1873,10 @@ GameObject:
   - 65: {fileID: 1353407469}
   - 23: {fileID: 1353407468}
   - 114: {fileID: 1353407467}
+  - 65: {fileID: 1353407472}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1793,6 +1945,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1353407472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353407466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1440231130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1805,9 +1969,10 @@ GameObject:
   - 65: {fileID: 1440231133}
   - 23: {fileID: 1440231132}
   - 114: {fileID: 1440231131}
+  - 65: {fileID: 1440231136}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1876,6 +2041,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1440231136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1440231130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1456383625
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,9 +2065,10 @@ GameObject:
   - 65: {fileID: 1456383628}
   - 23: {fileID: 1456383627}
   - 114: {fileID: 1456383626}
+  - 65: {fileID: 1456383631}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1959,6 +2137,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1456383631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1456383625}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1461506430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,9 +2161,10 @@ GameObject:
   - 65: {fileID: 1461506433}
   - 23: {fileID: 1461506432}
   - 114: {fileID: 1461506431}
+  - 65: {fileID: 1461506436}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,6 +2233,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1461506436
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1461506430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1466618741
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,9 +2257,10 @@ GameObject:
   - 65: {fileID: 1466618744}
   - 23: {fileID: 1466618743}
   - 114: {fileID: 1466618742}
+  - 65: {fileID: 1466618747}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2125,6 +2329,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1466618747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1466618741}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1564572332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2227,9 +2443,10 @@ GameObject:
   - 65: {fileID: 1575134502}
   - 23: {fileID: 1575134501}
   - 114: {fileID: 1575134500}
+  - 65: {fileID: 1575134505}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2298,6 +2515,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1575134505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575134499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1579692706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2310,9 +2539,10 @@ GameObject:
   - 65: {fileID: 1579692709}
   - 23: {fileID: 1579692708}
   - 114: {fileID: 1579692707}
+  - 65: {fileID: 1579692712}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2381,6 +2611,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1579692712
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1579692706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1693015066
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,9 +2634,10 @@ GameObject:
   - 33: {fileID: 1693015069}
   - 65: {fileID: 1693015068}
   - 23: {fileID: 1693015067}
+  - 65: {fileID: 1693015071}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2450,6 +2693,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1693015071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1693015066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1790348188
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,9 +2717,10 @@ GameObject:
   - 65: {fileID: 1790348191}
   - 23: {fileID: 1790348190}
   - 114: {fileID: 1790348189}
+  - 65: {fileID: 1790348194}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2533,6 +2789,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &1790348194
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1790348188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1975344738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,9 +2911,10 @@ GameObject:
   - 65: {fileID: 2018212731}
   - 23: {fileID: 2018212730}
   - 114: {fileID: 2018212729}
+  - 65: {fileID: 2018212734}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: fallingPlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2714,3 +2983,15 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!65 &2018212734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2018212728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
