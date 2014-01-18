@@ -5,8 +5,7 @@ public class compactorRoom : MonoBehaviour {
 	public bool activated;
 	public GameObject leftWall;
 	public GameObject rightWall;
-	public float pushForce = 100000f;
-	public GameObject player;
+	public int wallsTouching;
 
 	// Use this for initialization
 	void Start () {
@@ -15,9 +14,13 @@ public class compactorRoom : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log(leftWall.rigidbody.velocity.x);
-		if(activated && leftWall.rigidbody.velocity.x < 4){
-			leftWall.rigidbody.AddForce(pushForce,0,0);
+		if(activated){
+			leftWall.transform.position += new Vector3(0.2f, 0.0f, 0.0f);
+			rightWall.transform.position += new Vector3(-0.2f, 0.0f, 0.0f);
+		}
+		if(wallsTouching == 2){
+			Debug.Log("Player is dead");
 		}
 	}
+
 }
