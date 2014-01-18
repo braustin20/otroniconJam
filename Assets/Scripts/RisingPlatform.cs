@@ -4,6 +4,7 @@ using System.Collections;
 public class RisingPlatform : MonoBehaviour {
 
 	public float riseAmount;
+	public float riseSpeed;
 	float initialHeight;
 	// Use this for initialization
 	void Start () {
@@ -27,7 +28,7 @@ public class RisingPlatform : MonoBehaviour {
 
 		Debug.Log ("Rising");
 
-		transform.rigidbody.velocity = Vector3.up * 5;
+		transform.rigidbody.velocity = Vector3.up * riseSpeed;
 
 		while (true) {
 			if (initialHeight + riseAmount <= transform.position.y) {
