@@ -7,6 +7,8 @@ TagManager:
   - GrabbableObject
   - fallingPlatform
   - closingWall
+  - stairObjectEven
+  - stairObjectOdd
   - stairObject
   - 
   Builtin Layer 0: Default
