@@ -32,6 +32,12 @@ Pulling from master
 	
 	git merge upstream/master
 	
+Discarding local changes
+	
+	git stash save --keep-index
+	
+	git stash drop
+	
 
 Possibly Unused (Branches)
 ------------
