@@ -619,7 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 72807406}
   material: {fileID: 0}
-  ropeWidth: .340000004
+  ropeWidth: .0900000036
   resolution: .5
   ropeDrag: .100000001
   ropeMass: .5
@@ -863,7 +863,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1526909649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.88450909, y: .851547241, z: -.133158684}
+  m_LocalPosition: {x: -4.88450909, y: .851546288, z: -.133158684}
   m_LocalScale: {x: 36.0808334, y: 1, z: 30.8438702}
   m_Children: []
   m_Father: {fileID: 0}
