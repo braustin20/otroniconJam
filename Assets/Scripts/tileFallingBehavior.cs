@@ -5,7 +5,7 @@ using System.Collections;
 public class tileFallingBehavior : MonoBehaviour {
 
 	public float waitTime = 0.30f;
-	public bool isRigid = false;
+	private bool isRigid = false;
 		// Use this for initialization
 	void Start () {
 	}
