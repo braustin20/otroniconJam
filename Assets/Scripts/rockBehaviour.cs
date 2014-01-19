@@ -20,5 +20,11 @@ public class rockBehaviour : MonoBehaviour {
 	void OnCollisionEnter(Collision collision){
 		Debug.Log ("HIT");
 		gameObject.rigidbody.AddForce(explosion);
+
+		if(collision.gameObject.name == "JumpingOVR"){
+			Debug.Log ("Player hit");
+			//gameObject.SendMessage ("rocksHitMe");
+			gameObject.GetComponent<thisscriptworks>().rocksHitMe();
+		}
 	}
 }
