@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: pivot
-  m_Shader: {fileID: 3, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -18,7 +18,14 @@ Material:
           name: _MainTex
         second:
           m_Texture: {fileID: 2800000, guid: 120ddb23aa1235243aa8b5291eafa359, type: 3}
-          m_Scale: {x: 1, y: 8}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 7b7b353e57e007e4291e5046947410f4, type: 3}
+          m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:

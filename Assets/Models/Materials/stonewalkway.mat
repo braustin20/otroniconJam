@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: wallStone
+  m_Name: stonewalkway
   m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
@@ -17,21 +17,21 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 48d54345689e46d4da14edba6cca09f3, type: 3}
+          m_Texture: {fileID: 2800000, guid: 26a7d2e1cd8fe7e408f0089ae9958d9b, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
         second:
-          m_Texture: {fileID: 2800000, guid: 4fc7fb33ad957824d8d588cdde853e73, type: 3}
+          m_Texture: {fileID: 2800000, guid: 4e549f6b25893c94093bef8e9f2f7f28, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
-        second: .501358032
+        second: .415180445
     m_Colors:
       data:
         first:

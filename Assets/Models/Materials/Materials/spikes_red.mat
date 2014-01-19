@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: wallStone
-  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: spikes_red
+  m_Shader: {fileID: 3, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -17,21 +17,14 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 48d54345689e46d4da14edba6cca09f3, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _BumpMap
-        second:
-          m_Texture: {fileID: 2800000, guid: 4fc7fb33ad957824d8d588cdde853e73, type: 3}
+          m_Texture: {fileID: 2800000, guid: b00bba7b866bf5f4fa052e24bb9e016b, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
-        second: .501358032
+        second: .078125
     m_Colors:
       data:
         first:
@@ -40,4 +33,4 @@ Material:
       data:
         first:
           name: _SpecColor
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+        second: {r: .5, g: .5, b: .5, a: 1}

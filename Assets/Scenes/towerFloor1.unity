@@ -1877,8 +1877,8 @@ Transform:
   m_PrefabInternal: {fileID: 741237434}
   m_GameObject: {fileID: 202007025}
   m_LocalRotation: {x: -.163719699, y: -.677684546, z: .709613025, w: .10192585}
-  m_LocalPosition: {x: -3.99602389, y: 2.12232256, z: 14.4012146}
-  m_LocalScale: {x: 3.26130891, y: 3.26130915, z: 3.26130891}
+  m_LocalPosition: {x: -8.8425684, y: 2.90481019, z: 14.4012146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!65 &202007031
@@ -1891,8 +1891,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .960000217, y: .0600001998, z: .960000217}
-  m_Center: {x: 1.11758702e-09, y: -.0299997684, z: -3.51667389e-08}
+  m_Size: {x: 4, y: .250000238, z: 4}
+  m_Center: {x: -1.86264515e-09, y: -.125000015, z: 1.14087015e-07}
 --- !u!1 &206519748
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,7 +3411,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: bddae55a3cec2e3458575a3b3ebb1234, type: 2}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -3427,7 +3427,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 1325413089}
   m_GameObject: {fileID: 411369854}
-  m_Mesh: {fileID: 4300000, guid: 6e7e84c8a3adc974fbb1103c20bff4b3, type: 3}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &411369859
 Transform:
   m_ObjectHideFlags: 0
@@ -3436,7 +3436,7 @@ Transform:
   m_GameObject: {fileID: 411369854}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.734480858, y: 6.84022808, z: .634737015}
-  m_LocalScale: {x: 1.84172702, y: 1.75538599, z: 1.84172702}
+  m_LocalScale: {x: 1, y: .953119576, z: 1}
   m_Children: []
   m_Father: {fileID: 1895211969}
 --- !u!1 &430806813
@@ -4985,11 +4985,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 56dc1dcd73d689b47a29106cce0fa726, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.99602389
+      value: -8.8425684
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56dc1dcd73d689b47a29106cce0fa726, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.12232256
+      value: 2.90481019
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56dc1dcd73d689b47a29106cce0fa726, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5013,15 +5013,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56dc1dcd73d689b47a29106cce0fa726, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.26130891
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56dc1dcd73d689b47a29106cce0fa726, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.26130915
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 56dc1dcd73d689b47a29106cce0fa726, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.26130891
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56dc1dcd73d689b47a29106cce0fa726, type: 3}
@@ -10414,6 +10414,7 @@ MonoBehaviour:
   grabbedRope: {fileID: 0}
   closestRope: {fileID: 0}
   usingAxis: z
+  isdead: 0
 --- !u!114 &1386428905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10440,6 +10441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canControl: 1
   useFixedUpdate: 1
+  timez: 0
   movement:
     maxForwardSpeed: 6
     maxSidewaysSpeed: 6
@@ -14620,6 +14622,114 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f21d1908d3f454db2fc12037675e85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_BackgroundStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 1
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 1
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 1
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 1
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 1
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 1
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 1
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor:
+        r: 0
+        g: 0
+        b: 0
+        a: 1
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  m_FadeTexture: {fileID: 0}
+  m_CurrentScreenOverlayColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  m_TargetScreenOverlayColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
+  m_DeltaColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
+  m_FadeGUIDepth: -1000
   isFading: 0
   times: 0
 --- !u!135 &2117005148
