@@ -14,7 +14,8 @@ public class CameraFade : MonoBehaviour
 	private Color m_TargetScreenOverlayColor = new Color(0,0,0,0);	// default target color: black and fully transparrent
 	private Color m_DeltaColor = new Color(0,0,0,0);		// the delta-color is basically the "speed / second" at which the current color should change
 	private int m_FadeGUIDepth = -1000;				// make sure this texture is drawn on top of everything
-	
+	public bool isFading = false;
+	public float times = 0;
 	
 	// initialize the texture, background-style and initial color:
 	private void Awake()
@@ -28,7 +29,17 @@ public class CameraFade : MonoBehaviour
 		//SetScreenOverlayColor(new Color(0,0,0,1));
 		//StartFade(new Color(1,0,0,1), 5);
 	}
-	
+
+	 void Update(){
+		if(isFading == true){
+			times += Time.deltaTime;
+		}
+		//Debug.Log("duh");
+		if(times > 3.0f){
+			Debug.Log ("WE HAVE ARRIVED");
+			Application.LoadLevel (1);
+		}
+	}
 	
 	// draw the texture and perform the fade:
 	private void OnGUI()
@@ -85,6 +96,8 @@ public class CameraFade : MonoBehaviour
 	}
 
 	public void OnTriggerEnter(){
-		StartFade (Color.black, 5.0f);
+		Debug.Log ("THE THING");
+		StartFade (Color.black, 3.5f);
+		isFading = true;
 	}
 }
