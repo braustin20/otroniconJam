@@ -160,8 +160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b9a3299bf89fe44913eeeb8b09b6ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFading: 0
-  times: 0
 --- !u!1 &511586970
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +335,7 @@ GameObject:
   - 33: {fileID: 1112749267}
   - 65: {fileID: 1112749266}
   - 23: {fileID: 1112749265}
+  - 114: {fileID: 1112749269}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -356,7 +355,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 607623c512126434c8b28d86ceb17cf4, type: 2}
+  - {fileID: 2100000, guid: 9d6c51289ee4c9c4c98adee572715025, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -395,6 +394,19 @@ Transform:
   m_LocalScale: {x: 16, y: 9, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1112749269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1112749264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3c9e616b7b72384eb37b5b4e5680163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFading: 0
+  times: 0
 --- !u!1 &1490200632
 GameObject:
   m_ObjectHideFlags: 0
