@@ -4,7 +4,7 @@ using System.Collections;
 public class Axe : MonoBehaviour {
 
 	int vMod;
-	float theta;
+	public float theta;
 	bool isRight;
 	public float initialSpeed = 10;
 	public float swingSpeed = 300;
@@ -12,7 +12,6 @@ public class Axe : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		isRight = true;
-		theta = 90;
 		vMod = 1;
 		sMod = 0;
 	}
