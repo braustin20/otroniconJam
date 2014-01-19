@@ -10,8 +10,8 @@ public class gameManager : MonoBehaviour {
 		//GameObject.Find ("OVRCameraController").GetComponent<OVRCameraController>().CameraRootPosition.x = PlayerPrefs.GetFloat("PlayerX");
 		//GameObject.Find ("OVRCameraController").GetComponent<OVRCameraController>().CameraRootPosition.y = PlayerPrefs.GetFloat("PlayerY") + 500.0f;
 		//GameObject.Find ("OVRCameraController").GetComponent<OVRCameraController>().CameraRootPosition.z = PlayerPrefs.GetFloat ("PlayerZ");
-		GameObject.FindWithTag ("Player").transform.position = new Vector3(PlayerPrefs.GetFloat ("PlayerX"), PlayerPrefs.GetFloat ("PlayerY") + 5.0f, PlayerPrefs.GetFloat ("PlayerZ"));
-		toggleEsc = false;
+		GameObject.FindWithTag("Player").transform.position = GameObject.Find("spawn").transform.position;
+			toggleEsc = false;
 
 		if(Application.isPlaying){
 			Screen.showCursor = false;

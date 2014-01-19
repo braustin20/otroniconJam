@@ -45,7 +45,7 @@ public class CameraFade : MonoBehaviour
 	// draw the texture and perform the fade:
 	private void OnGUI()
 	{   
-		// if the current color of the screen is not equal to the desired color: keep fading!
+		// if the current color of the screen is not equal ato the desired color: keep fading!
 		if (m_CurrentScreenOverlayColor != m_TargetScreenOverlayColor)
 		{			
 			// if the difference between the current alpha and the desired alpha is smaller than delta-alpha * deltaTime, then we're pretty much done fading:
@@ -97,6 +97,7 @@ public class CameraFade : MonoBehaviour
 	}
 
 	public void OnTriggerEnter(Collider other){
+
 		if(other.gameObject.tag == "Player"){
 			Debug.Log ("THE THING");
 			StartFade (Color.black, 3.5f);
@@ -105,5 +106,6 @@ public class CameraFade : MonoBehaviour
 			PlayerPrefs.SetFloat ("PlayerY", GameObject.Find("spawn").transform.position.y);
 			PlayerPrefs.SetFloat ("PlayerZ", GameObject.Find("spawn").transform.position.z);
 		}
+		
 	}
 }
