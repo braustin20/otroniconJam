@@ -181,7 +181,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 2
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
@@ -515,6 +515,32 @@ Transform:
   m_GameObject: {fileID: 422590243}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 276.707642}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!1 &462872068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 462872069}
+  m_Layer: 0
+  m_Name: spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &462872069
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462872068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.75490022, y: -.0441346169, z: 189.888931}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -964,7 +990,7 @@ Camera:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_RenderingPath: -1
+  m_RenderingPath: 2
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
@@ -1064,7 +1090,7 @@ GameObject:
   - 114: {fileID: 1937161362}
   - 114: {fileID: 1937161361}
   - 114: {fileID: 1937161360}
-  - 54: {fileID: 1937161359}
+  - 114: {fileID: 1937161359}
   m_Layer: 0
   m_Name: JumpingOVR
   m_TagString: Player
@@ -1085,22 +1111,21 @@ Transform:
   - {fileID: 969819498}
   - {fileID: 365650506}
   m_Father: {fileID: 0}
---- !u!54 &1937161359
-Rigidbody:
+--- !u!114 &1937161359
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5400000, guid: c2fc0baad5ceb8e4496e8c4dd629cee5,
+  m_PrefabParentObject: {fileID: 11400022, guid: c2fc0baad5ceb8e4496e8c4dd629cee5,
     type: 2}
   m_PrefabInternal: {fileID: 2126611919}
   m_GameObject: {fileID: 1937161357}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6add8910300c4b4982d76d989058592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFading: 0
+  times: 0
+  dead: 0
 --- !u!114 &1937161360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1116,6 +1141,7 @@ MonoBehaviour:
   grabbedRope: {fileID: 0}
   closestRope: {fileID: 0}
   usingAxis: z
+  isdead: 0
 --- !u!114 &1937161361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,6 +1168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canControl: 1
   useFixedUpdate: 1
+  timez: 0
   movement:
     maxForwardSpeed: 6
     maxSidewaysSpeed: 6

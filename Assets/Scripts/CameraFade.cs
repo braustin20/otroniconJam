@@ -96,9 +96,14 @@ public class CameraFade : MonoBehaviour
 
 	}
 
-	public void OnTriggerEnter(){
-		Debug.Log ("THE THING");
-		StartFade (Color.black, 3.5f);
-		isFading = true;
+	public void OnTriggerEnter(Collider other){
+		if(other.gameObject.tag == "Player"){
+			Debug.Log ("THE THING");
+			StartFade (Color.black, 3.5f);
+			isFading = true;
+			PlayerPrefs.SetFloat ("PlayerX", GameObject.Find("spawn").transform.position.x);
+			PlayerPrefs.SetFloat ("PlayerY", GameObject.Find("spawn").transform.position.y);
+			PlayerPrefs.SetFloat ("PlayerZ", GameObject.Find("spawn").transform.position.z);
+		}
 	}
 }
