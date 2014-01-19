@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 400002}
-  material: {fileID: 0}
+  material: {fileID: 2100000, guid: 23eaaa404e2605b4da7094e7ff15d60c, type: 2}
   ropeWidth: .360000014
   resolution: .5
   ropeDrag: .100000001
