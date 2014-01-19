@@ -18,7 +18,7 @@ public class deathRespawnSaved : MonoBehaviour {
 		if(other.tag == "Player"){
 		Debug.Log (GameObject.FindWithTag("Player").transform.position.x);
 
-		Application.LoadLevel("TestScene2");
+		Application.LoadLevel("TestScene5");
 		Debug.Log (GameObject.FindWithTag("Player").transform.position.x);
 
 		Debug.Log ("X: " + PlayerPrefs.GetFloat("PlayerX"));
