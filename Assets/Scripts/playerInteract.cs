@@ -48,7 +48,7 @@ public class playerInteract : MonoBehaviour {
 				holding = false;
 				isBobbing = true;
 				this.gameObject.GetComponentInChildren<HeadBobber>().enabled = true;
-				SendMessage("SetVelocity", transform.forward * 20.0f);
+				SendMessage("SetVelocity", transform.forward * 10.0f);
 			}
 		}
 	}
