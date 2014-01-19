@@ -10382,7 +10382,7 @@ GameObject:
   - 114: {fileID: 1386428906}
   - 114: {fileID: 1386428905}
   - 114: {fileID: 1386428904}
-  - 54: {fileID: 1386428903}
+  - 114: {fileID: 1386428903}
   m_Layer: 0
   m_Name: JumpingOVR
   m_TagString: Player
@@ -10403,22 +10403,20 @@ Transform:
   - {fileID: 1535997099}
   - {fileID: 1355708295}
   m_Father: {fileID: 0}
---- !u!54 &1386428903
-Rigidbody:
+--- !u!114 &1386428903
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5400000, guid: c2fc0baad5ceb8e4496e8c4dd629cee5,
+  m_PrefabParentObject: {fileID: 11400022, guid: c2fc0baad5ceb8e4496e8c4dd629cee5,
     type: 2}
   m_PrefabInternal: {fileID: 2138366041}
   m_GameObject: {fileID: 1386428901}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec94690d913b6f044aa4fad1c97f49c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFading: 0
+  times: 0
 --- !u!114 &1386428904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10784,8 +10782,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .960000217, y: .0599999987, z: .960000217}
-  m_Center: {x: -2.38418579e-07, y: -.0299999993, z: 0}
+  m_Size: {x: 4, y: .25, z: 4}
+  m_Center: {x: 0, y: -.125, z: 0}
 --- !u!1 &1402278115
 GameObject:
   m_ObjectHideFlags: 0
