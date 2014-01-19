@@ -12,32 +12,25 @@ public class gameManager : MonoBehaviour {
 		//GameObject.Find ("OVRCameraController").GetComponent<OVRCameraController>().CameraRootPosition.z = PlayerPrefs.GetFloat ("PlayerZ");
 		GameObject.FindWithTag ("Player").transform.position = new Vector3(PlayerPrefs.GetFloat ("PlayerX"), PlayerPrefs.GetFloat ("PlayerY") + 5.0f, PlayerPrefs.GetFloat ("PlayerZ"));
 		toggleEsc = false;
+
+		if(Application.isPlaying){
+			Screen.showCursor = false;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
+	if(Input.GetKeyDown (KeyCode.Escape) ){
+			Application.Quit();
 
-
-		if(Input.GetKeyDown (KeyCode.Escape) ){
-			if(toggleEsc == false){
-				toggleEsc = true;
-			}else{
-				toggleEsc = false;
-			}
 		}
-
-
+	}
+	void OnApplicationQuit(){
+		Debug.Log("quitted");
+		PlayerPrefs.SetFloat ("PlayerX", GameObject.Find("spawn").transform.position.x);
+		PlayerPrefs.SetFloat ("PlayerY", GameObject.Find("spawn").transform.position.y);
+		PlayerPrefs.SetFloat ("PlayerZ", GameObject.Find("spawn").transform.position.z);
 	}
 
-	void OnGUI(){
-
-		if(toggleEsc == true){
-			if(GUI.Button (new Rect(10,10,100,100), "Exit")){
-				Application.Quit();
-				}
-			}
-		}
-
-	}
-
+}
