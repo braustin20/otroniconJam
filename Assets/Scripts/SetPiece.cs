@@ -8,6 +8,7 @@ public class SetPiece : MonoBehaviour {
 
 	public GameObject Fire;
 	public GameObject Rock;
+	public GameObject floor;
 
 	public float timeBetweenFire = 3;
 	bool isRockEvent;
@@ -52,8 +53,10 @@ public class SetPiece : MonoBehaviour {
 		if (waitForPlayer) {
 			waitForPlayer = false;
 			rigidbody.AddForce(Vector3.up * 10000);
-			if (transform.position.y < 5)
+			if (transform.position.y < 5) {
 				StartCoroutine("FireEvent");
+				Destroy (floor.gameObject);
+			}
 			else {
 				isRockEvent = true;
 				StartCoroutine("RockEvent");
