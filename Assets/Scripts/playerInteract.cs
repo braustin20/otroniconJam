@@ -10,7 +10,9 @@ public class playerInteract : MonoBehaviour {
 	private bool holding;
 	private bool isGrounded = true;
 	private float timez;
+	private float deadTime;
 	public bool isdead;
+
 	// Use this for initialization
 	void Start () {
 		isBobbing = true;
@@ -36,17 +38,26 @@ public class playerInteract : MonoBehaviour {
 		SendMessage("somethingElse");
 
 		//The following lines of code kill the player if he is in the air too long
+		//********************
 
 		if(!isGrounded && !holding){
 			timez += Time.deltaTime;
 		}
 		if(isGrounded || holding){
-			if(timez > 3.0f){
+			if(timez > 2.0f){
 				isdead = true;
 			}else{
 				timez = 0;
 			}
 		}
+		if(isdead){
+			deadTime += Time.deltaTime;
+			if(deadTime > 2.0f){
+				Application.LoadLevel(Application.loadedLevel);
+			}
+		}
+
+		//******************************
 
 
 		if(holding == true && usingAxis == "x"){
