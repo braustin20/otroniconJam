@@ -15,7 +15,7 @@ public class Level8: MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-		//currentPos = null;
+		currentPos = new Vector2(-10, -1);
 
 		size = PlatformPrefab.transform.localScale.x + 0.1f;
 
@@ -30,20 +30,19 @@ public class Level8: MonoBehaviour {
 		}
 	}
 	
-	// Update is called once per frameb
-	void Update () {
-	
-	}
-
 	public void PlatformTrigger(Vector3 pos) {
 
+		Vector2 temp = new Vector2((int)(pos.x / size), (int)(pos.z / size));
 
-		if (currentPos != null){
+		if (currentPos.x != -10){
+
+			Grow(new Vector2(pos.x - temp.x, pos.y - temp.y));
 
 		}
+		currentPos = temp;
+	}
 
-
-
+	void Grow(Vector2 index) {
 
 	}
 }

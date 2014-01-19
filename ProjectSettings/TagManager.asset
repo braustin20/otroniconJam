@@ -10,6 +10,11 @@ TagManager:
   - stairObjectEven
   - stairObjectOdd
   - stairObject
+  - Path1
+  - Path2
+  - Path3
+  - Path4
+  - Path5
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
