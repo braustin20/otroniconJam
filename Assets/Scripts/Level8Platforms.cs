@@ -21,8 +21,9 @@ public class Level8Platforms : MonoBehaviour {
 		GameManager.SendMessage("PlatformTrigger", this.transform.position, SendMessageOptions.DontRequireReceiver);
 	}
 
-	public void Create(Vector2 index) {
+	public void Create() {
 
+		StartCoroutine("Spawn");
 	}
 
 	IEnumerator Spawn() {
