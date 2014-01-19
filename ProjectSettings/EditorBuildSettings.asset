@@ -11,3 +11,5 @@ EditorBuildSettings:
     path: Assets/Scenes/towerFloor1.unity
   - enabled: 1
     path: Assets/Scenes/SetPiece.unity
+  - enabled: 1
+    path: Assets/Scenes/FinalLevelT.unity
