@@ -18,6 +18,7 @@ public class Level7Platforms : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
+		Debug.Log ("TEST");
 		GameManager.GetComponent<Level7>().PlatformTrigger(this.transform.position);
 	}
 
@@ -29,7 +30,7 @@ public class Level7Platforms : MonoBehaviour {
 		float initPos = transform.position.y;
 
 		while ( transform.position.y <= initPos + amount) {
-			transform.position += Vector3.up * 5 * Time.deltaTime;
+			transform.position += Vector3.up * 3.5f * Time.deltaTime;
 			yield return 0;
 		}
 

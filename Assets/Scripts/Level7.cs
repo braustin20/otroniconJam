@@ -34,6 +34,9 @@ public class Level7: MonoBehaviour {
 
 	public void PlatformTrigger(Vector3 pos) {
 
+		pos.x -= transform.position.x;
+		pos.z -= transform.position.z;
+
 		if (pos.z / size < 9) 
 			grid[(int)(pos.x / size),(int)(pos.z / size) + 1].GetComponent<Level7Platforms>().Rise (1.5f);
 		if (pos.z/size < 8) {
