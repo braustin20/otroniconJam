@@ -19,6 +19,10 @@ var inputMoveDirection : Vector3 = Vector3.zero;
 @System.NonSerialized
 var inputJump : boolean = false;
 
+
+//
+var timez = 0.0;
+
 class CharacterMotorMovement {
 	// The maximum horizontal speed when moving
 	var maxForwardSpeed : float = 10.0;
@@ -180,6 +184,13 @@ function Awake () {
 	tr = transform;
 }
 
+function somethingElse(){
+	SendMessage("setGrounding", grounded);
+	//return (groundNormal.y > 0.01);
+}
+
+
+
 private function UpdateFunction () {
 	// We copy the actual velocity into a temporary variable that we can manipulate.
 	var velocity : Vector3 = movement.velocity;
@@ -270,6 +281,7 @@ private function UpdateFunction () {
 	
 	// We were grounded but just loosed grounding
 	if (grounded && !IsGroundedTest()) {
+		
 		grounded = false;
 		
 		// Apply inertia from platform
@@ -334,6 +346,8 @@ function FixedUpdate () {
 function Update () {
 	if (!useFixedUpdate)
 		UpdateFunction();
+		
+		timez += Time.deltaTime;
 }
 
 private function ApplyInputVelocityChange (velocity : Vector3) {	

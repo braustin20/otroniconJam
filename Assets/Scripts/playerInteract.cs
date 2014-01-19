@@ -8,16 +8,46 @@ public class playerInteract : MonoBehaviour {
 	private bool isBobbing;
 	private bool ropeRange;
 	private bool holding;
-
+	private bool isGrounded = true;
+	private float timez;
+	public bool isdead;
 	// Use this for initialization
 	void Start () {
 		isBobbing = true;
 		ropeRange = false;
 		holding = false;
+		isdead = false;
+		timez = 0;
 	}
-	
+
+	 public bool deadReturn(){
+
+		return isdead;
+	}
+
+	void setGrounding(bool ground){
+
+		isGrounded = ground;
+	}
+
 	// Update is called once per frame
 	void Update () {
+
+		SendMessage("somethingElse");
+
+		//The following lines of code kill the player if he is in the air too long
+
+		if(!isGrounded && !holding){
+			timez += Time.deltaTime;
+		}
+		if(isGrounded || holding){
+			if(timez > 3.0f){
+				isdead = true;
+			}else{
+				timez = 0;
+			}
+		}
+
 
 		if(holding == true && usingAxis == "x"){
 			this.transform.position = grabbedRope.transform.position + (grabbedRope.transform.forward + new Vector3(0.0f, -1.5f, 0.0f));
