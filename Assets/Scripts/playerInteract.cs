@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class playerInteract : MonoBehaviour {
@@ -40,7 +40,10 @@ public class playerInteract : MonoBehaviour {
 				isBobbing = false;
 				this.gameObject.GetComponentInChildren<HeadBobber>().enabled = false;
 			}
-			else if(holding == true){
+
+		}
+		if(Input.GetKeyUp(KeyCode.E)){
+			if(holding == true){
 				grabbedRope = null;
 				holding = false;
 				isBobbing = true;
