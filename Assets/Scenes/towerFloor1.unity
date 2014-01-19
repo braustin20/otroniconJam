@@ -15086,7 +15086,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 8fa42e63821bf420a8a2289200e86e92, type: 2}
     - target: {fileID: 13500000, guid: b807aacabb3105f4a98b5a07124094ae, type: 2}
       propertyPath: m_Radius
-      value: 4.81809998
+      value: 4.8950181
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: b807aacabb3105f4a98b5a07124094ae, type: 2}
       propertyPath: ropeWidth
@@ -19544,7 +19544,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4.81809998
+  m_Radius: 4.8950181
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1603813179
 GameObject:
