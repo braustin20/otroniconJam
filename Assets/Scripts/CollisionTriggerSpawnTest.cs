@@ -13,7 +13,7 @@ public class CollisionTriggerSpawnTest : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter(Collision collision){
+	void OnTriggerStay(Collider collision){
 		Debug.Log ("I AM INSIDE");
 
 		//Change collision to whatever causes the objects to spawn. You will need to hardcode the location of the spawning rocks.

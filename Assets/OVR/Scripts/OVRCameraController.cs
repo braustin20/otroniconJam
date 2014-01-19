@@ -172,6 +172,8 @@ public class OVRCameraController : OVRComponent
 		UpdateCameras();
 		
 		SetMaximumVisualQuality();
+
+		SetFarClipLane(2000.0f);
 		
 	}
 		
@@ -216,7 +218,16 @@ public class OVRCameraController : OVRComponent
 		else
 			OrientationOffset = transform.rotation;
 	}
-	
+	// Get/Set NearClipPlane
+	public void GetFarClipLane(ref float nearClipPlane)
+	{
+		farClipPlane = FarClipPlane;
+	}
+	public void SetFarClipLane(float farClipPlane)
+	{
+		farClipPlane= farClipPlane;
+		UpdateCamerasDirtyFlag = true;
+	}
 	// InitCameras
 	void UpdateCameras()
 	{

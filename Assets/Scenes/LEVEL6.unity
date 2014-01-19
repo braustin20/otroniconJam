@@ -247,7 +247,7 @@ GameObject:
   - 114: {fileID: 461689104}
   m_Layer: 0
   m_Name: JumpingOVR
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,6 +508,10 @@ Prefab:
     - target: {fileID: 400010, guid: c2fc0baad5ceb8e4496e8c4dd629cee5, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: c2fc0baad5ceb8e4496e8c4dd629cee5, type: 2}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c2fc0baad5ceb8e4496e8c4dd629cee5, type: 2}
@@ -855,6 +859,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1846430163}
   - 114: {fileID: 1846430162}
+  - 114: {fileID: 1846430164}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -868,7 +873,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1846430161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63ddd75c1e6db48c1a8e5666af5264d6, type: 3}
   m_Name: 
@@ -886,6 +891,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1846430164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846430161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5ca6a0d7870d7489d90d61f6b6a14c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlatformPrefab: {fileID: 100000, guid: 8824ba046c75d27468dc1bbb229ba839, type: 2}
+  gridSize: 10
 --- !u!1001 &1860414888
 Prefab:
   m_ObjectHideFlags: 0

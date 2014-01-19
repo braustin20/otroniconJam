@@ -28,6 +28,7 @@ public class Level6Platforms : MonoBehaviour {
 	}
 
 	public void Fall() {
+		Debug.Log ("Woo!");
 		if(isRigid == false){
 		this.gameObject.AddComponent<Rigidbody>();
 		this.rigidbody.useGravity = true;
