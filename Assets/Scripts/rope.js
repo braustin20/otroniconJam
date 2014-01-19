@@ -44,14 +44,14 @@ function OnDrawGizmos() {
 	if(target) {
 		Gizmos.color = Color.yellow;
 		Gizmos.DrawLine (transform.position, target.position);
-		Gizmos.DrawWireSphere ((transform.position+target.position)/2,ropeWidth);
+		Gizmos.DrawWireSphere ((transform.position+target.position)/2,(ropeWidth/2));
 		Gizmos.color = Color.green;
-		Gizmos.DrawWireSphere (transform.position, ropeWidth);
+		Gizmos.DrawWireSphere (transform.position, (ropeWidth/2));
 		Gizmos.color = Color.red;
-		Gizmos.DrawWireSphere (target.position, ropeWidth);
+		Gizmos.DrawWireSphere (target.position, (ropeWidth/2));
 	} else {
 		Gizmos.color = Color.green;
-		Gizmos.DrawWireSphere (transform.position, ropeWidth);	
+		Gizmos.DrawWireSphere (transform.position, (ropeWidth/2));	
 	}
 }
  
@@ -69,7 +69,7 @@ function LateUpdate()
 	if(target) {
 		// Does rope exist? If so, update its position
 		if(rope) {
-		 line.SetPoints(segmentPos, ropeWidth, Color.white);
+		 line.SetPoints(segmentPos, (ropeWidth/2), Color.white);
 		 line.enabled = true;
 			segmentPos[0] = transform.position;
 			for(var s:int=1;s<segments;s++)

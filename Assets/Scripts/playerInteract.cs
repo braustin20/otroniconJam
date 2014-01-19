@@ -20,10 +20,10 @@ public class playerInteract : MonoBehaviour {
 	void Update () {
 
 		if(holding == true && usingAxis == "x"){
-			this.transform.position = grabbedRope.transform.position + (grabbedRope.transform.forward + new Vector3(0.0f, -0.2f, 0.0f));
+			this.transform.position = grabbedRope.transform.position + (grabbedRope.transform.forward + new Vector3(0.0f, -1.5f, 0.0f));
 		}
 		if(holding == true && usingAxis == "z"){
-			this.transform.position = grabbedRope.transform.position + (grabbedRope.transform.forward + new Vector3(0.0f, -0.2f, 0.0f));
+			this.transform.position = grabbedRope.transform.position + (grabbedRope.transform.forward + new Vector3(0.0f, -1.5f, 0.0f));
 		}
 
 		if(Input.GetKey(KeyCode.W) && holding == true && grabbedRope.rigidbody.velocity.magnitude < 12.0f){
