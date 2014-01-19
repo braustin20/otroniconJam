@@ -19,4 +19,9 @@ public class Fire : MonoBehaviour {
 		yield return new WaitForSeconds(30 - transform.position.y + 25);
 		Destroy (this.gameObject);
 	}
+
+	void OnTriggerEnter(Collider other) {
+		if (other.tag == "Player")
+		GetComponent<thisscriptworks>().rocksHitMe();
+	}
 }
