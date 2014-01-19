@@ -3,17 +3,19 @@ using System.Collections;
 
 public class Level9 : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	public GameObject first;
+	bool hasFired;
 
-		GameObject[] objects = GameObject.FindGameObjectsWithTag("Path1");
-		foreach (GameObject p in objects)
-			p.renderer.material.color = new Color(255, 0, 0, 155);
-	
+	void Start() {
+		hasFired = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void OnTriggerEnter(Collider other) {
+		if (!hasFired)
+			first.SendMessage("Go", this.transform.position, SendMessageOptions.DontRequireReceiver);
+	}
+
+	public void Reset() {
+		hasFired = false;
 	}
 }
