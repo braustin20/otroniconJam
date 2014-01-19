@@ -4884,7 +4884,7 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 1975662210}
   m_GameObject: {fileID: 1441262577}
-  m_Mesh: {fileID: 4300000, guid: dcacee31506f347358a2f8498685834b, type: 3}
+  m_Mesh: {fileID: 4300000, guid: c8130f3276a30ff4590561a7d8b45c8f, type: 3}
 --- !u!4 &1441262581
 Transform:
   m_ObjectHideFlags: 0
@@ -5511,7 +5511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f967c467c5594b60b8017c93fe49b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlatformPrefab: {fileID: 100000, guid: ed11f582ddc9c4bf5a8e721e05e9b096, type: 2}
+  PlatformPrefab: {fileID: 100000, guid: 11773e9c79dcda5479d56b82e46fb539, type: 2}
   gridSize: 10
 --- !u!1 &1662079285
 GameObject:
@@ -6011,6 +6011,7 @@ GameObject:
   - 114: {fileID: 1901976376}
   - 114: {fileID: 1901976375}
   - 114: {fileID: 1901976374}
+  - 114: {fileID: 1901976380}
   m_Layer: 0
   m_Name: JumpingOVR
   m_TagString: Player
@@ -6039,7 +6040,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901976372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 397f43fb3b9c24e2da61fd79e5273741, type: 3}
+  m_Script: {fileID: 11500000, guid: e6add8910300c4b4982d76d989058592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isFading: 0
@@ -6164,6 +6165,17 @@ CharacterController:
   m_SkinWidth: .0500000007
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1901976380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1901976372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d7c808a87488143a89d9206cc0b230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1948881487
 GameObject:
   m_ObjectHideFlags: 0

@@ -83,7 +83,7 @@ public class playerInteract : MonoBehaviour {
 			}
 
 		}
-		if(Input.GetKeyUp(KeyCode.E)){
+		if(Input.GetKeyUp(KeyCode.E) || Input.GetButton("Fire1")){
 			if(holding == true){
 				grabbedRope = null;
 				holding = false;
