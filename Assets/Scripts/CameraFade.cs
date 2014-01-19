@@ -37,7 +37,7 @@ public class CameraFade : MonoBehaviour
 		//Debug.Log("duh");
 		if(times > 3.0f){
 			Debug.Log ("WE HAVE ARRIVED");
-			Application.LoadLevel (1);
+			Application.LoadLevel("towerFloor1");
 		}
 	}
 	

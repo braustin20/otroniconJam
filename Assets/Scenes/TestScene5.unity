@@ -1733,6 +1733,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a708fa030c955340931ec489d3c2338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFading: 0
+  times: 0
 --- !u!23 &415876312
 Renderer:
   m_ObjectHideFlags: 0
@@ -9088,7 +9090,7 @@ GameObject:
   - 54: {fileID: 1994694495}
   - 114: {fileID: 1994694500}
   m_Layer: 0
-  m_Name: rock
+  m_Name: rockPink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
