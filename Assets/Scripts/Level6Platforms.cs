@@ -23,7 +23,7 @@ public class Level6Platforms : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		//Allows only the player to collide with cubes. Adjust if you want other collisions.
 		if(other.tag == "Player"){
-		GameManager.GetComponent<Level6>().SendMessage("PlatformTrigger", this.transform.position, SendMessageOptions.DontRequireReceiver);
+		GameManager.GetComponent<Level6>().PlatformTrigger(this.transform.position);
 		}
 	}
 
