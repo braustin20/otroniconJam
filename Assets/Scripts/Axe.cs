@@ -3,29 +3,32 @@ using System.Collections;
 
 public class Axe : MonoBehaviour {
 
-	JointMotor motor;
-	float timer;
-	int velocityMod;
-
+	int vMod;
+	float theta;
+	bool isRight;
+	public float initialSpeed = 10;
+	public float swingSpeed = 300;
+	float sMod;
 	// Use this for initialization
 	void Start () {
-		motor = this.hingeJoint.motor;
-		timer = 2f;
-		velocityMod = 1;
+		isRight = true;
+		theta = 90;
+		vMod = 1;
+		sMod = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		timer -= Time.deltaTime;
 
-		if (timer <= 0) {
-			velocityMod *= -1;
-			timer = 2f;
+		sMod = 1 - Mathf.Abs(Mathf.Cos (transform.rotation.z));
+
+		theta += ((initialSpeed + (sMod * swingSpeed)) * vMod * Time.deltaTime) % 360;
+
+		if ((theta < 75 && !isRight) || (theta > 285 && isRight)){
+			vMod *= -1;
+			isRight = !isRight;
 		}
 
-		motor.targetVelocity = 500 * velocityMod * Mathf.Cos ((timer / 2));
-
-		this.hingeJoint.motor = motor;
-
+		transform.rotation = Quaternion.Euler (0, 0, theta);
 	}
 }
