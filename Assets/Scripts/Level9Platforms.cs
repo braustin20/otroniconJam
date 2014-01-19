@@ -10,6 +10,9 @@ public class Level9Platforms : MonoBehaviour {
 	void Start() {
 		fadeInSpeed = 1500;
 		alpha = 0;
+		renderer.material.color = new Color(renderer.material.color.r, renderer.material.color.g, renderer.material.color.b, 0);
+
+
 	}
 
 	public void Go() {

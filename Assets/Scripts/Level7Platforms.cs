@@ -18,7 +18,7 @@ public class Level7Platforms : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		GameManager.SendMessage("PlatformTrigger", this.transform.position, SendMessageOptions.DontRequireReceiver);
+		GameManager.GetComponent<Level7>().PlatformTrigger(this.transform.position);
 	}
 
 	public void Rise(float amount) {

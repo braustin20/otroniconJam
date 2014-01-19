@@ -11,6 +11,7 @@ public class Level9 : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
+		Debug.Log("HIT");
 		if (!hasFired)
 			first.SendMessage("Go", this.transform.position, SendMessageOptions.DontRequireReceiver);
 	}

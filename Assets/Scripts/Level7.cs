@@ -19,7 +19,7 @@ public class Level7: MonoBehaviour {
 
 		for(int i = 0; i < gridSize; i++) {
 			for (int j = 0; j < gridSize; j++) {
-				grid[i, j] = (GameObject)Instantiate(PlatformPrefab, new Vector3(i * size, 0, j * size), transform.rotation);
+				grid[i, j] = (GameObject)Instantiate(PlatformPrefab, new Vector3(transform.position.x + (i * size), 0, transform.position.z + (j * size)), transform.rotation);
 				grid[i, j].AddComponent<Level7Platforms>();
 				Destroy (grid[i, j].GetComponent<tileFallingBehavior>());
 			}
